@@ -1,0 +1,31 @@
+<html>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/modules/annotation/vendor/css/bootstrap.min.css">
+<script src="/modules/annotation/html2canvas.js"></script>
+<link rel="stylesheet" type="text/css" href="/modules/annotation/css/annotate.css">
+<script type="text/javascript" src="/modules/annotation/djaodjin-annotate.js"></script>
+<script src="/js/screenshot.js?cachebust=123"></script>
+<body>
+
+<div  align="center" >
+	<div  align="center" id = "nos_support_container" style = "margin: 0: auto; width: 1100px; border: 10px solid rgb(51, 102, 153); padding-top: 2px; padding-bottom: 20px; background-color: rgb(255, 255, 255); z-index: 2001; text-align: center; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+		  <h3 style = "text-align: center; color:#375b94; text-decoration: none; display: inline-block; font-size: 16px;"> Issue Reporting Tool (BETA) </h3></br>
+	      <textarea id = "rock_tools_message_input" rows="3" cols="40" style = "border: 2px solid rgb(51, 102, 153);">@here </textarea> 
+				Reporter(Your Slack Handle): <input id = "sky_reporter" value = "${result.sky_tool_user}" style = "border: 2px solid rgb(51, 102, 153); "> 
+				&nbsp; Slack Channel: <select name = "sky_tools_select_slack" id = "sky_tools_select_slack">
+					<option value="sky_channel" selected>SKY</option>
+					<option value="test">Test</option>
+				</select>
+	      <button id ="sky_button_submit" data = "nos_only" style = "background-color: #4CAF50; border: 2px solid rgb(51, 102, 153); color: white; padding: 10px; text-align: center; text-decoration: none; display: inline-block; font-size: 14px;">Send to Slack</button>
+	</div>
+</div>
+
+
+	<div class="my-image-selector"></div>
+	<div id="myCanvas" style="margin-top:50px; position:relative;"> </div>
+	<div id="preview_image" style="margin-top:50px; position:relative"> </div>
+	    <img id="target" src="">
+	    <div id = "base64data"></div>
+	    <img id = "readbase64" src=""/>
+  </body>
+</html>
